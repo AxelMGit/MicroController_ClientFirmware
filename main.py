@@ -27,7 +27,7 @@ def on_forever():
             lcd_text = "" + lcd_text + "."
             I2C_LCD1602.show_string(lcd_text, 0, 0)
             led.plot(3, 3)
-        elseif len(lcd_text2) < 16:
+        elif len(lcd_text2) < 16:
             I2C_LCD1602.lcd_init(39)
             lcd_text = "" + lcd_text + "."
             I2C_LCD1602.show_string(lcd_text, 0, 0)
